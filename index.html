@@ -1,31 +1,62 @@
+<!-- Declaração do tipo de documento - indica que este é um documento HTML5 -->
 <!DOCTYPE html>
+
+<!-- Tag raiz do documento HTML - tudo está dentro dela -->
+<!-- O atributo "lang" define o idioma principal da página (pt-br = Português do Brasil) -->
 <html lang="pt-br">
+
+<!-- Cabeçalho do documento - contém metadados e links para recursos externos -->
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
     <meta charset="UTF-8">
+    
+    <!-- Configura a viewport para responsividade (ajusta a largura ao dispositivo e escala inicial) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link para o arquivo CSS externo que estiliza a página -->
     <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- Título da página que aparece na aba do navegador -->
     <title>Flashcard</title>
 </head>
+
+<!-- Corpo do documento - todo o conteúdo visível da página fica aqui -->
 <body>
+    <!-- Tag semântica para o conteúdo principal da página -->
     <main>
+        <!-- Seção que agrupa conteúdo relacionado (no caso, os flashcards) -->
+        <!-- O "id" identifica unicamente esta seção para CSS/JavaScript -->
         <section id="container">
-            <!-- <article class="cartao">
+            <!-- Exemplo COMENTADO de um cartão/flashcard -->
+            <!-- Article é uma tag semântica para conteúdo independente (como um cartão) -->
+            <!--
+            <article class="cartao">
                 <div class="cartao__conteudo">
-                    <h3>Programação</h3>
+                    <h3>Programação</h3> <!-- Título do cartão -->
                     <div class="cartao__conteudo__pergunta">
-                        <p>O que é JavaScript?</p>
+                        <p>O que é JavaScript?</p> <!-- Texto da pergunta -->
                     </div>
                     <div class="cartao__conteudo__resposta">
-                        <p>O JavaScript é uma linguagem de programação</p>
+                        <p>O JavaScript é uma linguagem de programação</p> <!-- Texto da resposta -->
                     </div>
                 </div>
-            </article> -->
+            </article>
+            -->
         </section>
     </main>
+
+    <!-- Rodapé da página - geralmente contém informações de copyright, autoria, etc. -->
     <footer>
         <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
     </footer>
+
+    <!-- Scripts JavaScript - colocados no final para não bloquear a renderização da página -->
+    <!-- Primeiro arquivo com a lógica principal do aplicativo -->
     <script src="app.js"></script>
+    
+    <!-- Segundo arquivo que provavelmente contém as perguntas/respostas dos flashcards -->
     <script src="perguntas.js"></script>
 </body>
+
+<!-- Fechamento da tag HTML raiz -->
 </html>
